@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f4ead4;
+  --color-paper-deep: #e8d7b5;
+  --color-ink: #2a1c12;
+  --color-muted: #6b5340;
+  --color-cinnabar: #8b1e1e;
+  --color-cinnabar-deep: #6b1d1d;
+  --color-gold: #c4a574;
+  --color-gold-soft: #ead9b8;
+  --color-surface: #fff8ea;
+  --radius: 0.75rem;
+  --font-sans: "Source Serif 4", "Noto Serif SC", "Times New Roman", serif;
+  --font-display: "Noto Serif SC", "Source Serif 4", serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+}
